@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@media (max-width: 400px){
+    #linksNot{
+        display: none;
+    }
+    header{
+  background-color: #091BE900;
+  position: relative;
+  height: 40px;
+  margin-top: 0;
+  display: flex;
+  margin: auto;
+}
+  #imagemDecorativa{
+    display: none;
+  }
+  .tituloblog{
+    font-size: 10px;
+  }
+}
+@media (min-width: 901px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        background: #00000060;
+    }
+    .linkNot{
+        display: block;
+        
+    }
+    .JsAtivador{
+        display: none;
+    }
+ 
+  .texto3 > p{
+  font-size: 12pt;
+}
+  .texto2, .texto3, .texto4{
+    max-width: 800px;
+  }
+ .topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+ }
+  .active{
+    display: block;
+    width: 250px;
+    margin-left: 2em;
+    color: #FFF;
+  }
+  #myLinks{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icon{
+    display: none;
+  }
+  .link3{
+    transform: translate(-1em, -0.5em);
+    text-decoration: none;
+    margin-top: 1em;
+    padding: 2px 1em 2px 1em;
+    color: #FFF;
+    border: 2px solid #00FFFF;
+    border-radius: 1em;
+    background-color: none;
+    transition-duration: 3s;
+    transition-property: box-shadow, background-color;
+    box-shadow: 2px 2px 20px #00013A20;
+  }
+  .link3:hover{
+    background-color: #00FFFF;
+    box-shadow: 2px 2px 20px #009EFF60;
+  }
+  #Menublog{
+    color: #FFF;
+  }
+}
+@media (max-width: 900px){
+    #linksNot{
+        display: none;
+        
+    }
+    header{
+  background-color: #000000;
+  height: 40px;
+  margin-top: 0;
+  display: flex;
+  margin: auto;
+}
+  #imagemDecorativa{
+    display: none;
+  }
+  
+}
+p{
+  text-align: justify;
+}
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+  font-family: 'Kaushan Script';
+  height: 300px;
+  background-color: #8D96FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+*/
+.texto2, .texto3, .texto4{
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  margin: auto;
+  width: 94%;
+  box-shadow: 0px 0px 25px #00000020;
+}
+.Avisos{
+  background-color: #DEDEDE;
+  padding: 2em;
+  margin: 10em 0em 10em 0em;
+  box-shadow:  2px 2px 15px rgba(0, 0, 0, 0.250);
+}
+.Avisos > p{
+  font-size: 0.8em;
+  width: 75%;
+}
+.projetos{
+  align-self: left;
+  color: #4B97FB;
+}
+#butao{
+  background-color: #051AFF00;
+  border: 0.3em solid #4B97FB;
+  border-radius: 0.8em;
+  width: 10em;
+  height: 2em;
+  color: #4B97FB;
+  box-shadow: 2px 2px 10px #4B97F8;
+  transform: rotate(0deg);
+  transition-property: transform, border, color;
+  transition-duration: 3s, 3s, 3s;
+  transition-delay: 1s;
+  transition-timing-function: ease-out;
+}
+#butao:hover{
+  border: 0.3em solid #4BFBFB;
+  transform: scale(1.5);
+  color: #4BFBFB;
+}
+.TituloAviso{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto2{
+  margin-top: 10em;
+}
+.texto3 > h2{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.texto4{
+  width: 90%;
+  margin: 4em auto 0em auto;
+  animation: efeito 4s ease-in 1;
+}
+@keyframes efeito{
+  from{
+    opacity: 0%;
+    transform: translateY(3em)
+  }
+  to{
+    opacity: 100%;
+    transform: translateY(0em)
+  }
+}
+body{
+  margin: 0px;
+}
+#linha1, #linha2, #linha3{
+  width: 25px;
+  height: 4px;
+  background-color: #FFF;
+  border-radius: 3px;
+}
+#linha1, #linha2{
+  margin-bottom: 4px;
+}
+
+header h1{
+  font-size: 15px;
+  margin-left: 10px;
+  color: white;
+}
+#Ativador{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+#Links{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #00000030;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#conteudoDosLinks{
+  transform: translateX(-100%);
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #FFFFFF;
+  box-shadow: 5px 5px 30px 2px rgba(0, 0, 0, 0.45);
+}
+#conteudoDosLinks li{
+  color: black;
+}
+ul{
+  list-style: none;
+}
+@keyframes Menuicone{
+  0%{
+    opacity: 100%;
+    
+  }
+  100%{
+    transform: rotate(360deg);
+    opacity: 0%;
+  }
+}
+@keyframes LinksAnimacao{
+  0%{
+    transform: translateX(-100%)
+  }
+  100%{
+    transform: translateX(0%)
+  }
+}
+#kickLinks{
+  display: none;
+  margin: 1em 0.5em 0em 0em;
+}
+#kickLinksLinha1{
+  width: 30px;
+  height: 5px;
+  transform: rotate(45deg);
+  background-color: black;
+  border-radius: 3px;
+}
+#kickLinksLinha2{
+  width: 30px;
+  height: 5px;
+  transform: rotate(-45deg) translate(0.2em, -0.2em);
+  background-color: black;
+  border-radius: 3px;
+}
+#ajustarKickLinks{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+@keyframes MenuiconeKick{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+@keyframes LinksAnimacaoKick{
+  0%{
+   width: 70%
+  }
+  100%{
+    width: 0%;
+  }
+}
+.textoLinks{
+  margin-top: 1em;
+}
+#linksNavegacao{
+position: relative;
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+  color: black;
+  background-color: #efefef;
+  width: 90%;  
+  height: 90%;
+  margin: auto;
+}
+.Link{
+display: block;
+  color: black;
+  width: 5em;
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 1em;
+}
+#Casainicio{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+
+#Link1, #Link2, #Link3, #Link4{
+bacbackground-color: #00000000 ;
+}
+#Link1:hover{
+    animation: linksanimation 0.2s forwards;
+}
+#Link2:hover{
+    animation: linksanimation 0.2s forwards;
+}
+#Link3:hover{
+    animation: linksanimation 0.2s forwards;
+}
+#Link4:hover{
+    animation: linksanimation 0.2s forwards;
+}
+@keyframes linksanimation{
+    100%{
+        background-color: black;
+        color: #ffffff;
+    }
+}
+.titulo{
+    font-size: 3em;
+    font-family: 'Fjalla One';
+    
+}
+legend{
+color: #00000080;
+    
+}
+#menu{
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../Nano.jpg');
+}
+#tituloDoBlog{
+    height: 300px;
+    text-align: center;
+    color: white;
+background-image: radial-gradient(circle, #00000000, #000000);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
