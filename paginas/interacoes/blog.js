@@ -19,4 +19,9 @@ JsAtivador.addEventListener('click', function(){
 
 $(window).scroll(function(){
   var sc = $(this).scrollTop()
+  var maior = 1-((sc -1170)/100)
+  var texto4 = $(".texto4")
+  if(sc > 1170){
+  texto4.css("opacity", maior)
+  }
 })
