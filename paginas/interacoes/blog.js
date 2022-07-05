@@ -21,3 +21,7 @@ kickLinks.addEventListener('click', function(){
   JsAtivador.style.animation = "";
   setTimeout(() => JsAtivador.style.animation = "MenuiconeKick 2s forwards")
   })
+$(window).scroll(function(){
+  var sc = $(this).scrolltop()
+  console.log(sc)
+})
