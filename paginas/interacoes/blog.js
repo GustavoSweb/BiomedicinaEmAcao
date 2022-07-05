@@ -16,12 +16,7 @@ JsAtivador.addEventListener('click', function(){
   
   kickLinks.style.display = "block";
 })
-kickLinks.addEventListener('click', function(){
-  Links.style.display = "none";
-  JsAtivador.style.animation = "";
-  setTimeout(() => JsAtivador.style.animation = "MenuiconeKick 2s forwards")
-  })
+
 $(window).scroll(function(){
-  var sc = $(this).scrolltop()
-  console.log(sc)
+  var sc = $(this).scrollTop()
 })
